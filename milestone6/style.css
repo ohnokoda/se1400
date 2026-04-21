@@ -81,3 +81,54 @@ button:hover{
         grid-template-columns: 100%;
     }
 }
+body {
+            margin: 0;
+            font-family: sans-serif;
+            overflow-x: hidden; /* Prevents side-scrolling */
+        }
+
+        #header {
+            padding: 15px;
+            text-align: center;
+        }
+
+        /* Make images responsive */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Adjust Header Layout for Mobile */
+        @media (max-width: 768px) {
+            #text {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                justify-content: center !important; /* Override inline style */
+                gap: 5px !important;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+                padding: 0 10px;
+            }
+
+            /* Stack Navigation Links vertically */
+            #nav ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+                padding: 20px 0;
+            }
+
+            .headings {
+                padding: 20px;
+                text-align: center;
+            }
+
+            button {
+                width: 100%; /* Full width button for easier tapping */
+                padding: 15px;
+                font-size: 1.1rem;
+            }
+        }
