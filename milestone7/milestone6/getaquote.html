@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="background-color: rgba(12,116,124,0.8); height: auto; margin: 0; padding: 10px; text-align: center;">Get A Quote</h1> 
+    
+    <div id="header">
+        <nav id="nav">
+            <ul style="display:grid; grid-template-columns: repeat(4, auto); justify-content: space-around; list-style: none; padding: 10px; margin: 0; background-color:rgba(12,116,124,0.8);";>
+                <li><a href="/">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="getaquote.html">Get A Quote</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div style="text-align: center; margin: 20px;">
+        <button style='padding: 10px 20px; cursor: pointer;'>Get A Quote</button>
+    </div>
+
+    <main>
+        <section id="quote">
+            <h3 style="font-family: Georgia, 'Times New Roman', Times, serif; text-align: center; padding: 2rem;"> 
+             Get a quote today!
+            </h3>
+             <form action="/apply" method="post" style="font-family: Georgia, 'Times New Roman', Times, serif;">
+
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <div class="form-group">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first-name"
+                               autocomplete="given-name"
+                               required
+                               aria-describedby="name-hint">
+                        
+                    </div>
+                
+
+                    <div class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name"
+                               autocomplete="family-name"
+                               required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Company-Name">Company Name</label>
+                        <input type="text" id="Company-Name" name="Company-Name"
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email"
+                               autocomplete="email"
+                               placeholder="you@example.com"
+                               required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone"
+                               autocomplete="tel"
+                               placeholder="555-555-5555"
+                               pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                               title="Format: 555-555-5555"
+                               required>
+                    </div>
+                </fieldset>
+
+                    <fieldset>
+                    <legend>Reason for Quote</legend>
+                    <label><input type="radio" name="quote" value="roof-repair" checked> Roof Repair</label>
+                    <label><input type="radio" name="quote" value="Roof-Inspection"> Roof Inspection</label>
+                    <label><input type="radio" name="quote" value="Construction-Needs"> Construction Needs</label>
+                    <label><input type="radio" name="quote" value="Other"> Other</label>
+                </fieldset>
+
+                    <div class="form-group">
+                    
+                    </div>
+
+                    <div class="form-group">
+                        <label for="start-date">Please pick a date that would work best for you, and we will reach out with closest available appointment!</label>
+                        <input type="date" id="start-date" name="start-date"
+                               min="2025-08-01" max="2027-12-31">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="referral">How did you hear about Flashpoint?</label>
+                        <input type="text" id="referral" name="referral"
+                               list="referral-options"
+                               placeholder="Start typing or choose an option...">
+                        <datalist id="referral-options">
+                            <option value="Social Media">
+                            <option value="Friend or Family">
+                            <option value="Collegue">
+                        </datalist>
+                    </div>
+                </fieldset>
+
+                <div class="form-group">
+                    <label for="statement">Any additional information you would like to provide our team...</label>
+                    <textarea id="info" name="info" rows="6"
+                              placeholder="Additional Information..."
+                              aria-describedby="additional info"></textarea>
+                </div>
+
+               <div style="display: flex; justify-content: center;">
+  <button type="submit">Submit Application</button>
+</div>
+            </form>
+        </section>
+
+    </main>
+<footer style="
+  grid-template-rows: auto 1fr auto; 
+  background-color: rgba(12,116,124,0.8);
+  min-height:20px;">
+  
+</footer>
+</body>
+</html>
