@@ -28,7 +28,7 @@ height: 300px;
 
 }
 a {
-  color: #ffffff; /* Uses a Hex code for orange-red */
+  color: #eeb9b2; 
 }
 main{
     display: flex;
@@ -84,7 +84,7 @@ button:hover{
 body {
             margin: 0;
             font-family: sans-serif;
-            overflow-x: hidden; /* Prevents side-scrolling */
+            overflow-x: hidden; 
         }
 
         #header {
@@ -98,13 +98,13 @@ body {
             height: auto;
         }
 
-        /* Adjust Header Layout for Mobile */
+        
         @media (max-width: 768px) {
             #text {
                 flex-direction: column;
                 align-items: center;
                 text-align: center;
-                justify-content: center !important; /* Override inline style */
+                justify-content: center !important;
                 gap: 5px !important;
             }
 
@@ -113,7 +113,7 @@ body {
                 padding: 0 10px;
             }
 
-            /* Stack Navigation Links vertically */
+          
             #nav ul {
                 flex-direction: column;
                 align-items: center;
@@ -127,7 +127,7 @@ body {
             }
 
             button {
-                width: 100%; /* Full width button for easier tapping */
+                width: 100%; 
                 padding: 15px;
                 font-size: 1.1rem;
             }
